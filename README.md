@@ -1,6 +1,6 @@
 # 🎨 [PhotoSynthe]
 
-A next-generation **design and photo editing platform** inspired by Canva and Photoshop. Built for creators who want both **simplicity and power** in one place.
+A next-generation **design and photo editing platform**. Built for creators who want both **simplicity and power** in one place.
 
 ---
 
