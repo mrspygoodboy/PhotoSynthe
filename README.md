@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 [PhotoSynthe]
 
-## Getting Started
+A next-generation **design and photo editing platform** inspired by Canva and Photoshop. Built for creators who want both **simplicity and power** in one place.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🖼️ **Drag and Drop Editor**: Create stunning designs with an intuitive interface  
+- ✂️ **AI Powered Tools**: Background removal, auto enhancement, smart resizing  
+- 🎨 **Layer Based Editing**: Work like a pro with layers, blending modes, and filters  
+- 💡 **Dynamic Templates**: Choose from pre-made layouts or build your own  
+- 🤝 **Real Time Collaboration**: Edit and share projects with your team easily  
+- ☁️ **Cloud Sync and Export**: Save your work anywhere and export in multiple formats  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 Tech Stack
 
-## Learn More
+- **Frontend:** React / Next.js / Tailwind CSS  
+- **Backend:** Node.js / Express / Firebase / Supabase  
+- **Database:** PostgreSQL
+- **Hosting:** Vercel
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## © Copyright
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+© 2025 Muhammad Aliyan. All rights reserved.  
+Unauthorized copying, modification, or distribution of this project, in part or in full, is strictly prohibited.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
