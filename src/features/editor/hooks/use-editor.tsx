@@ -11,12 +11,28 @@ export const useEditor = () => {
         initialContainer: HTMLDivElement;
 
     }) => {
+
+        // Make the controls more visible.
+
+        fabric.Object.prototype.set({
+            cornerColor: "#FFF",
+            cornerStyle: "circle",
+            borderColor: "3b82f6",
+            borderScaleFactor: 1.5,
+            transparentCorners: false,
+            borderOpacityWhenMoving: 1,
+            cornerStrokeColor: "#3b82f6",
+        })
+
+        // A rectangle placed in the center with locked movement
+        // used as a workspace.
+
         const initialWorkspace = new fabric.Rect({
             width: 900,
             height: 1200,
             name: 'clip',
             fill: 'white',
-            selectable: false,
+            selectable: false, 
             hasControls: false,
             shadow: new fabric.Shadow({
                 color: "rgba(0,0,0,0.8)",
