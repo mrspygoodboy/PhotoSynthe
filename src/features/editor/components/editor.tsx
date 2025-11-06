@@ -1,3 +1,4 @@
+// Copyright Muhammad Aliyan © 2025
 "use client";
 import { fabric } from "fabric";
 import { useEditor } from "@/features/editor/hooks/use-editor";

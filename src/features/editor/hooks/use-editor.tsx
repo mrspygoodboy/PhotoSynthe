@@ -1,7 +1,20 @@
+// Copyright Muhammad Aliyan © 2025
+
 import { fabric } from "fabric";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
+import { useAutoResize } from "./use-auto-resize";
+
 
 export const useEditor = () => {
+    // Canvas can either be null or fabric.Canvas
+    const [ canvas, setCanvas ] = useState<fabric.Canvas | null>(null);
+
+    // Container can either be HTMLDivElement or null
+    const [container, setContainer] = useState<HTMLDivElement | null>(null);
+
+    useAutoResize({canvas, container});
+
+
     const init = useCallback(({
         initialCanvas,
         initialContainer,
@@ -52,6 +65,10 @@ export const useEditor = () => {
         
         initialCanvas.centerObject(initialWorkspace);
         initialCanvas.clipPath = initialWorkspace;
+
+        // Set the canvas and the container.
+        setCanvas(initialCanvas);
+        setContainer(initialContainer);
 
         const test = new fabric.Rect({
             height: 100,
