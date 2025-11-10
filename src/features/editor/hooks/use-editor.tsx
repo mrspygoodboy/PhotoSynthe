@@ -39,7 +39,7 @@ export const useEditor = () => {
 
         // A rectangle placed in the center with locked movement
         // used as a workspace.
-
+        
         const initialWorkspace = new fabric.Rect({
             width: 900,
             height: 1200,
