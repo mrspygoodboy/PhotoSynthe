@@ -75,10 +75,8 @@ export const useEditor = () => {
             width: 100,
             fill: "black",
         })
-
         initialCanvas.add(test)
         initialCanvas.centerObject(test)
-
     }, []);
 
     return { init };
