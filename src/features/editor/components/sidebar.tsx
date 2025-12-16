@@ -2,7 +2,7 @@
 // Marks this component as a Client Component in Next.js (required for hooks, events, etc.)
 
 // Sidebar component
-export const Side = () => {
+export const Sidebar = () => {
     return (
         // <aside> semantic element used for side content like navigation or tools
         <aside
