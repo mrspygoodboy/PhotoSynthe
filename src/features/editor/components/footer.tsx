@@ -1,4 +1,4 @@
-// My design skills suck, and I often forget CSS, so all my css stuff is always well documented.
+// My design skills suck, and I often forget CSS, so all my CSS stuff is always well-documented.
 /*
   Tailwind CSS class breakdown for the <footer>:
 
