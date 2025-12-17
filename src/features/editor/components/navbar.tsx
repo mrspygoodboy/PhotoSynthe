@@ -1,11 +1,15 @@
 "use client";
 
+import {ChevronDown, MousePointerClick} from "lucide-react";
+import { CiFileOn } from "react-icons/ci";
+
 import { Logo } from "@/features/editor/components/logo"
 import { Button } from "@/components/ui/button"
 
+ // Shadcn imports
 import { DropdownMenu, DropdownMenuItem, DropdownMenuContent, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
-import { CiFileOn } from "react-icons/ci";
+import { Separator } from "@/components/ui/separator";
+
 
 export const Navbar = () => {
     return <nav className="w-full flex items-center p-4 h-[68px] gap-x-8 border-b lg:pl-[34px]">
@@ -28,6 +32,15 @@ export const Navbar = () => {
                     </div>
                 </DropdownMenuContent>
             </DropdownMenu>
+            <Separator orientation="vertical" className="mx-2"/>
+            <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => {}} // TODO: Add functionality
+            className="" // TODO: Add Dynamic class?
+            >
+                <MousePointerClick className="size-4"/>
+            </Button>
         </div>
     </nav>
 }
