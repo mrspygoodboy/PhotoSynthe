@@ -1,0 +1,15 @@
+import Link from "next/link";
+import Image from "next/image";
+
+/*
+ */
+
+export const Logo = () => {
+    return (
+        <Link href="/">
+            <div className="size-8 relative shrink-0">
+                <Image src="/logo.svg" alt="PhotoSynthe" className="shrink-0 hover:opacity-75 transition" width={32} height={32}/>
+            </div>
+        </Link>
+    )
+}
