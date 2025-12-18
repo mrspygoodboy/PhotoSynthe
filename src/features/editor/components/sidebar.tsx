@@ -16,7 +16,9 @@ export const Sidebar = () => {
                 overflow-y-auto   /* Enable vertical scrolling if content overflows */
             "
         >
-            {/* Sidebar content goes here */}
+            <ul className="flex flex-col">
+
+            </ul>
         </aside>
     );
 };
