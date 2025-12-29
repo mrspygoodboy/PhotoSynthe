@@ -8,12 +8,23 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator";
 import { Hint } from "@/components/hint";
 
+import {ActiveType } from "@/features/editor/types";
+
+interface NavbarProps {
+    activeTool: ActiveTool;
+    onChangeActiveTool: (tool: ActiveTool) => void;
+}
 
  // Shadcn imports
 import { DropdownMenu, DropdownMenuItem, DropdownMenuContent, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 import {BsCloudCheck} from "react-icons/bs";
+import {ActiveTool} from "@/features/editor/types";
+import {cn} from "@/lib/utils";
 
-export const Navbar = () => {
+export const Navbar = ({
+    activeTool,
+    onChangeActiveTool
+    }: NavbarProps) => {
     return <nav className="w-full flex items-center p-4 h-[68px] gap-x-8 border-b lg:pl-[34px]">
         <Logo/>
         <div className ="w=full flex items-center gap-x-1 h-full">
@@ -39,8 +50,8 @@ export const Navbar = () => {
                 <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => {}} // TODO: Add functionality
-                className="" // TODO: Add Dynamic class?
+                onClick={() => onChangeActiveTool('select')} // TODO: Add functionality
+                className={cn(activeTool === "select" && "bg-gray-100")} // TODO: Add Dynamic class?
                 >
                     <MousePointerClick className="size-4"/>
                 </Button>
