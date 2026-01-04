@@ -17,10 +17,7 @@ A next-generation **design and photo editing platform**. Built for creators who 
 
 ## 🧠 Tech Stack
 
-- **Frontend:** React / Next.js / Tailwind CSS  
-- **Backend:** Node.js / Express / Firebase / Supabase  
-- **Database:** PostgreSQL
-- **Hosting:** Vercel
+- **Frontend:** React / Next.js / Tailwind CSS
 
 ---
 
